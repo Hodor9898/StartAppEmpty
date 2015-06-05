@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace StarTeamApp.Models.Enums
+namespace StartApp.Models.Enums
 {
     public enum GenderType
     {
