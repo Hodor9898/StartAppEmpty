@@ -1,23 +1,34 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using MongoDB.Bson;
+using StartApp.Models;
 using StartApp.Models.Enums;
 
-namespace StartApp.Models
+namespace StartApp.ViewModels
 {
-    public class User
+    public class UserViewModel
     {
-        public ObjectId Id { get; set; }
+        public UserViewModel(User user)
+        {
+            FirstName = user.FirstName;
+            LastName = user.LastName;
+            Age = user.Age;
+            Gender = user.Gender;
+            County = user.County;
+            Email = user.Email;
+            Photo = user.Photo;
+            Expertise = user.Expertise;
+            Projects = user.Projects;
+            DateJoined = user.DateJoined;
+        }
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Age { get; set; }
         public GenderType Gender { get; set; }
         public CountryType County { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
         public string Photo { get; set; }
         public UserExpertiseType Expertise { get; set; }
         public List<Project> Projects { get; set; }
