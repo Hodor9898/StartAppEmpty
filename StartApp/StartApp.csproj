@@ -120,10 +120,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\CountryType.cs" />
-    <Compile Include="Enums\GenderType.cs" />
-    <Compile Include="Enums\ProjectStatusType.cs" />
-    <Compile Include="Enums\UserExpertiseType.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Models\Enums\CountryType.cs" />
+    <Compile Include="Models\Enums\GenderType.cs" />
+    <Compile Include="Models\Enums\ProjectStatusType.cs" />
+    <Compile Include="Models\Enums\UserExpertiseType.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -147,7 +148,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

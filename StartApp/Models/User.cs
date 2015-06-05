@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using MongoDB.Bson;
-using StarTeamApp.Models.Enums;
+using StartApp.Models.Enums;
 
-namespace StarTeamApp.Models
+namespace StartApp.Models
 {
     public class User
     {
