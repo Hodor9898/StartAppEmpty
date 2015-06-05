@@ -2,14 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using MongoDB.Bson;
+using StartApp.Models;
 using StartApp.Models.Enums;
 
-namespace StartApp.Models
+namespace StartApp.ViewModels
 {
-    public class Project
+    public class ProjectViewModel
     {
-        public ObjectId Id { get; set; }
+        public ProjectViewModel(Project project)
+        {
+            Name = project.Name;
+            Photo = project.Photo;
+            Description = project.Description;
+            Admins = project.Admins;
+            Members = project.Members;
+            DateCreated = project.DateCreated;
+            Status = project.Status;
+        }
+
         public string Name { get; set; }
         public string Photo { get; set; }
         public string Description { get; set; }
@@ -17,5 +27,6 @@ namespace StartApp.Models
         public List<User> Members { get; set; }
         public DateTime DateCreated { get; set; }
         public ProjectStatusType Status { get; set; }
+
     }
 }
