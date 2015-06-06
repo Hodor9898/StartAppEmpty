@@ -41,16 +41,16 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MongoDB.Bson">
-      <HintPath>..\..\Users\Itay\Desktop\CSharpDriver-2.0.0\MongoDB.Bson.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\CSharpDriver-2.0.0 (3)\MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver">
-      <HintPath>..\..\Users\Itay\Desktop\CSharpDriver-2.0.0\MongoDB.Driver.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\CSharpDriver-2.0.0 (3)\MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
-      <HintPath>..\..\Users\Itay\Desktop\CSharpDriver-2.0.0\MongoDB.Driver.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\CSharpDriver-2.0.0 (3)\MongoDB.Driver.Core.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver.Legacy">
-      <HintPath>..\..\Users\Itay\Desktop\CSharpDriver-2.0.0\MongoDB.Driver.Legacy.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\CSharpDriver-2.0.0 (3)\MongoDB.Driver.Legacy.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

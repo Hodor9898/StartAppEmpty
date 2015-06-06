@@ -6,7 +6,6 @@ using System.Web;
 using MongoDB.Bson;
 using StarTeam.Models.Enums;
 using StarTeam.Models;
-using StarTeam.Models.Enums;
 
 namespace StarTeam.Models
 {
