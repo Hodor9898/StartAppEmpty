@@ -9,6 +9,9 @@ namespace StarTeam.ViewModels
 {
     public class ProjectViewModel
     {
+        public ProjectViewModel()
+        {
+        }
         public ProjectViewModel(Project project)
         {
             Name = project.Name;
