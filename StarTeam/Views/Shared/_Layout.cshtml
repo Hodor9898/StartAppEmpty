@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Code Express</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="@Url.Content("~/CSS/bootstrap.min.css")" />
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            @Html.Partial("_Header");
+        </div>
+    </header>
+    <div id="body">
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        @Html.Partial("_Footer");
+    </footer>
+</body>
+</html>
