@@ -6,30 +6,25 @@ using MongoDB.Driver;
 
 namespace StarTeam.Server
 {
-    public static class InitMongo
+    public class InitMongo
     {
-        private const string ConnectionString = "mongodb://localhost:27020/mydb";
-        private static readonly MongoClient client = new MongoClient(ConnectionString);
-        private static readonly MongoServer server = client.GetServer();
+        const string ConnectionString = "mongodb://localhost:27020/mydb";
+
         private static MongoDatabase database;
         static InitMongo()
         {
             
         }
-        
+
         public static MongoDatabase Database
         {
             get
             {
-                if (database == null)
-                {
-                    database = server.GetDatabase("mydb");  
-                }
+                if (database != null) return database;
+                var client = new MongoClient(ConnectionString);
+                var server = client.GetServer();
+                database = server.GetDatabase("mydb");
                 return database;
-            }
-            set
-            {
-                database = server.GetDatabase("mydb");  
             }
         }
     }
